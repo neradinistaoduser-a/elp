@@ -1,0 +1,307 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url("./images/backgroundimage70%opacity.png")
+}
+
+nav {
+    left:0;
+    position: fixed;
+    height: 100%;
+    width: 15%;
+    right:0;
+    background-color: rgb(236, 172, 10);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    text-align: center;
+    margin-top: 10px;
+    border-bottom: 0.5px solid yellow;
+    padding: 10px;
+}
+nav ul li button{
+    padding: 20px;
+    margin-left: 3%;
+    background-color: rgb(236, 172, 10);
+    border: none;
+    font-size: 22px;
+    cursor:pointer;
+}
+nav ul li button:hover{
+    color: rgb(253, 238, 154);
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    font-size: 22px;
+    cursor:pointer;
+}
+nav ul li a:hover{
+    color: rgb(253, 238, 154);
+}
+
+.divlogo {
+    margin-left: 3%;
+    margin-right: 5%;
+}
+
+.logo {
+    width: 8%;
+    position:fixed;
+    margin-left: 13%;
+    opacity: 0.8;
+}
+.logo:hover{
+    opacity: 1;
+}
+.row {
+    align-items: center;
+    justify-content: center;
+}
+#columns {
+    margin-top: 30px;
+}
+h1{
+    margin-left: 45%;
+    font-size: 57px;
+    color:black;
+    font-family:serif;
+}
+.prvihr{
+    margin-left: 33%;
+    width: 35%;
+    border-bottom: 0.5px solid yellow;
+}
+.glavni{
+    margin-left: 25%;
+    margin-right: 10%;
+}
+.slika1{
+    width: 40%;
+    display:inline-block;
+    border: solid 3px goldenrod;
+    aspect-ratio: 1.5;
+}
+.podnaslov{
+    display: inline-block;
+    width: 40%;
+    margin-left: 20px;
+}
+h2{
+    font-size: 30px;
+    border-bottom: 2px solid gold;
+    width: 20%;
+}
+.column {
+    display: inline-block;
+    width:300px;
+    height:300px;
+    margin-right: 30px;
+    margin-top: 50px;
+  }
+  .gymlogo{
+    width: 300px;
+    height: 300px;
+  }
+  .saznajvise{
+    padding: 10px;
+    text-decoration-line: none;
+    background-color: rgb(236, 172, 10);
+    color:black;
+    font-size: 20px;
+  }
+  .saznajvise:hover{
+    color: rgb(253, 238, 154);
+    cursor: pointer;
+  }
+.gymmargina{
+    margin-right: 17%;
+}
+.marginadesna1{
+    border-right: none;
+}
+.personlogo{
+    width: 35%;
+    margin-left: 25%;
+    aspect-ratio: 1;
+}
+.drugihr{
+    margin-left: 35%;
+    width: 35%;
+    border-bottom: 0.5px solid yellow;
+}
+.drugi{
+    margin-left: 40%;
+}
+.trecihr{
+    width: 100%;
+    border-bottom: 2px solid yellow;
+}
+.slikaABCgym{
+    border-radius: 50%;
+    margin-right: 3%;
+    float:right;
+    margin-top: 0;
+    width: 15%;
+    aspect-ratio: 1.5;
+}
+footer{
+    margin-top: 5%;
+    width: 100%;
+}
+.footermain{
+    margin-top: 10px;
+    left: 0;
+    font-size: 30px;
+    font-family: serif;
+    position: absolute;
+}
+/*pocetak*/
+
+form{
+    background-image: url("./images/background1.webp");
+    border-radius: 3%;
+}
+.container{
+    top:0;
+    border: goldenrod 2px solid;
+    bottom: 0;
+    align-items: center;
+    padding: 20px;
+    width: 700px;
+    height: 90%;
+    border-radius: 3%;
+    padding-right: 5px;
+}
+
+.slika{
+    width: 15%;
+    opacity: 0.8;
+    border-radius: 15%;
+    vertical-align:middle;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.slika:hover{
+    opacity: 1;
+}
+.naslov{
+    margin-top: 0;
+    font-size: 50px;
+    text-align: center;
+    bottom: 0;
+    margin-left: 33%;
+    display: inline;
+    font-family:serif;
+}
+.ime{
+    top: 0;
+    display: inline-block;
+    width: 50%;
+}
+.prezime{
+    display: inline-block;
+    width: 49%;
+    font-size: 20px;
+}
+.ime1{
+    padding: 10px;
+    width: 73%;
+    margin: 5px 5px 22px 0;
+    border: none;
+    background: #f1f1f1;
+    border: solid 0.5px gold;
+    border-radius: 5%;
+}
+.prezime1{
+    padding: 10px;
+    width: 80%;
+    margin: 5px 15px 22px 0;
+    border: none;
+    background: #f1f1f1;
+    border: solid 0.5px gold;
+    border-radius: 5%;
+}
+.polja{
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: solid 0.5px gold;
+    border-radius: 5%;
+    background: #f1f1f1;
+  }
+label{
+    font-size: 20px;
+}
+.btn{
+    padding: 15px;
+    margin-left: 36%;
+    border:2px solid goldenrod;
+    color:black;
+    border-radius: 10%;
+  }
+.btn2{
+    padding: 15px;
+    margin-left: 1%;
+    border:2px solid goldenrod;
+    color:black;
+    border-radius: 10%;
+}
+.btn:hover{
+    color: rgba(0, 0, 0, 0.93);
+    background-color: gold;
+    cursor: pointer;
+}
+.btn2:hover{
+    color: rgba(0, 0, 0, 0.93);
+    background-color: gold;
+    cursor: pointer;
+}
+.container1{
+    border: goldenrod 2px solid;
+    margin-bottom: 0;
+    align-items: center;
+    padding: 50px;
+    padding-right: 15px;
+    width: 700px;
+    border-radius: 3%;
+    padding-bottom: 25px;
+}
+.popup-login{
+    background: rgb(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.popup-signup{
+    background: rgb(0, 0, 0, 0.7);
+    width: 100%;
+    height: 105%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+/* kraj forme*/
+.pter{
+    font-size: 30px;
+}
+.divklasa{
+    display: flex; 
+    justify-content: space-between;
+}

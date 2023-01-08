@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url("./images/backgroundimage70%opacity.png");
+    font-family:Arial, Helvetica, sans-serif;
+}
+nav {
+    left:0;
+    position: fixed;
+    height: 100%;
+    width: 15%;
+    right:0;
+    background-color: rgb(236, 172, 10);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    text-align: center;
+    margin-top: 10px;
+    border-bottom: 0.5px solid yellow;
+    padding: 10px;
+}
+nav ul li button{
+    padding: 20px;
+    margin-left: 3%;
+    background-color: rgb(236, 172, 10);
+    border: none;
+    font-size: 22px;
+    cursor:pointer;
+}
+nav ul li button:hover{
+    color: rgb(253, 238, 154);
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    font-size: 22px;
+    cursor:pointer;
+}
+nav ul li a:hover{
+    color: rgb(253, 238, 154);
+}
+.divlogo {
+    margin-left: 3%;
+    margin-right: 5%;
+}
+
+.logo {
+    width: 8%;
+    position:fixed;
+    margin-left: 13%;
+    opacity: 0.8;
+}
+.logo:hover{
+    opacity: 1;
+}
+.table{
+    top:0;
+    margin-left: 27%;
+    margin-top: 0;
+}
+table{
+    width: 85%;
+    border-spacing: 0;
+    margin-bottom: 5%;
+}
+thead{
+    background-color: rgb(236, 172, 10);
+}
+th{
+    padding:15px;
+    text-align: center;
+}
+.neparan{
+    background-color: rgba(226, 228, 192, 0.849);
+}
+td{
+    padding: 10px 15px;
+    text-align: center;
+    background-color: #e4e2d7d2;
+}
+td:hover{
+    background-color: gold;
+}
+a{
+    text-decoration-line: none;
+    color:black;
+}
+footer{
+    margin-top: 45%;
+    width: 100%;
+}
+.footermain{
+    margin-top: 10px;
+    left: 0;
+    font-size: 30px;
+    font-family: serif;
+    position: absolute;
+}
+form{
+    background-image: url("./images/background1.webp");
+    border-radius: 3%;
+}
+.container{
+    border: goldenrod 2px solid;
+    margin-bottom: 0;
+    align-items: center;
+    padding: 20px;
+    width: 700px;
+    height: 10%;
+    border-radius: 3%;
+    padding-right: 5px;
+}
+
+.slika{
+    width: 15%;
+    opacity: 0.8;
+    border-radius: 15%;
+    vertical-align:middle;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.slika:hover{
+    opacity: 1;
+}
+.naslov{
+    margin-top: 0;
+    font-size: 50px;
+    text-align: center;
+    bottom: 0;
+    margin-left: 33%;
+    display: inline;
+    font-family:serif;
+}
+.ime{
+    top: 0;
+    display: inline-block;
+    width: 50%;
+}
+.prezime{
+    display: inline-block;
+    width: 49%;
+    font-size: 20px;
+}
+.ime1{
+    padding: 10px;
+    width: 73%;
+    margin: 5px 5px 22px 0;
+    border: none;
+    background: #f1f1f1;
+    border: solid 0.5px gold;
+    border-radius: 5%;
+}
+.prezime1{
+    padding: 10px;
+    width: 80%;
+    margin: 5px 15px 22px 0;
+    border: none;
+    background: #f1f1f1;
+    border: solid 0.5px gold;
+    border-radius: 5%;
+}
+.polja{
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: solid 0.5px gold;
+    border-radius: 5%;
+    background: #f1f1f1;
+  }
+label{
+    font-size: 20px;
+}
+.btn{
+    padding: 15px;
+    margin-left: 36%;
+    border:2px solid goldenrod;
+    color:black;
+    border-radius: 10%;
+  }
+.btn2{
+    padding: 15px;
+    margin-left: 1%;
+    border:2px solid goldenrod;
+    color:black;
+    border-radius: 10%;
+}
+.btn:hover{
+    color: rgba(0, 0, 0, 0.93);
+    background-color: gold;
+    cursor: pointer;
+}
+.btn2:hover{
+    color: rgba(0, 0, 0, 0.93);
+    background-color: gold;
+    cursor: pointer;
+}
+.container1{
+    border: goldenrod 2px solid;
+    margin-bottom: 0;
+    align-items: center;
+    padding: 50px;
+    padding-right: 15px;
+    width: 700px;
+    border-radius: 3%;
+    padding-bottom: 25px;
+}
+.popup-login{
+    background: rgb(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.popup-signup{
+    background: rgb(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.pointer{
+    cursor: pointer;
+    padding: 15px;
+    background-color: #e4e2d7d2;
+    border: none;
+}
+.pointer:hover{
+    font-weight: bold;
+}
