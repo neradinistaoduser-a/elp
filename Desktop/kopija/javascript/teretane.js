@@ -1,5 +1,4 @@
 var teretane = [];
-console.log(teretane)
 var firebaseUrl = "https://projekat-b55d8-default-rtdb.firebaseio.com";
 let id = window.document.location.href.slice(-1);
 var treninzi = [];
@@ -61,7 +60,7 @@ function af() {
   request.send();
 }
 function appendTrening(treninzi){
-  treninzi.forEach((trening) => {
+  treninzi.forEach((trening,index) => {
     var divGlavni = document.getElementById('columns');
     var prviDiv = document.createElement('div');
     var p = document.createElement('p')
@@ -87,7 +86,7 @@ function appendTrening(treninzi){
     divGlavni.appendChild(prviDiv);
       a.addEventListener('click', ()=> {
         let url = "treninzi.html"
-        window.document.location = url + "?=" 
+        window.document.location = url + "?=" + index
       })
   })
   
