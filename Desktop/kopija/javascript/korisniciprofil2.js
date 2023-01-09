@@ -3,13 +3,12 @@ var korisnici = []
 function atributiKor() {
 
     let id = window.document.location.href.slice(-1)
-    console.log(korisnici[id].ime)
-    // let ime = document.getElementById('ime')
-    // ime.value = `${korisnici[id].ime}`
-    console.log(korisnici[id].ime)
+    
+    let ime = document.getElementById('ime')
+    ime.value = `${korisnici[id].ime}`
+
     let naslov = document.getElementById('naslovA')
     naslov.innerHTML = `${korisnici[id].ime}`
-    console.log(korisnici[id].ime)
 
     let prezime = document.getElementById('prezime')
     prezime.value = `${korisnici[id].prezime}`
@@ -61,7 +60,7 @@ function kor() {
 
 let dugme = document.getElementById('dugme')
 dugme.addEventListener('click',function(){
-  confirm("Are you sure you want to edit this user?")
+  confirm("Nothing happens :)")
 })
 
 window.addEventListener('load', kor)

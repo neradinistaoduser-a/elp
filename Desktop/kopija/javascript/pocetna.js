@@ -1,7 +1,6 @@
 var firebaseUrl = 'https://projekat-b55d8-default-rtdb.firebaseio.com';
 var brojac = 0
 
-
 function funkcija() {
     function sviPodaci() {
       let request = new XMLHttpRequest();
@@ -13,7 +12,6 @@ function funkcija() {
               let podatak = podaci[i];
               appendPodatak(podatak, brojac);
               brojac+= 1
-              
             }
           } else {
             alert("Greška prilikom učitavanja teretane.");

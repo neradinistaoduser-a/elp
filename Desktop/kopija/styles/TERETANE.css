@@ -5,7 +5,7 @@
 
 body {
     font-family:Arial, Helvetica, sans-serif;
-    background-image: url("./images/backgroundimage70%opacity.png")
+    background-image: url("../images/backgroundimage70%opacity.png")
 }
 
 nav {
@@ -115,10 +115,10 @@ footer{
     font-family: serif;
     position: absolute;
 }
-/*pocetak*/
+/*pocetak forme*/
 
 form{
-    background-image: url("./images/background1.webp");
+    background-image: url("../images/background1.webp");
     border-radius: 3%;
 }
 .container{
@@ -257,4 +257,35 @@ table{
 .divklasa{
     display: flex; 
     justify-content: space-between;
+}
+
+
+@media screen and (max-width: 1441px){
+    .slika1{
+        width: 50%;
+    }
+    .footermain{
+        margin-top: 5%;
+        margin-left: 50%;
+    }
+    .prvihr{
+        width: 64%;
+        margin-left: 22%;
+    }
+}
+@media screen and (max-width: 1025px){
+    .slika1{
+        width: 100%;
+        
+    }
+    .podnaslov{
+        width: 100%;
+    }
+    .footermain{
+        margin-top: 5%;
+        margin-left: 50%;
+    }
+    .prvihr{
+        width: 80%;
+    }
 }

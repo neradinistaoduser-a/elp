@@ -1,7 +1,5 @@
 var teretane = []
 var firebaseUrl = 'https://projekat-b55d8-default-rtdb.firebaseio.com';
-console.log(teretane)
-
 function atributiTer() {
     let id = window.document.location.href.slice(-1)
     let naslov = document.getElementById('naslov')
@@ -26,7 +24,8 @@ function ter() {
         if (this.status == 200) {
           objekat = JSON.parse(request.responseText);
           for (let i in objekat) {
-            teretane.push(objekat[i])
+            teretana = objekat[i]
+            teretane.push(teretana)
           }
           atributiTer()
             
@@ -41,4 +40,30 @@ function ter() {
     request.send();
 }
 
+treninzi = []
+console.log(treninzi)
+
+function af() {
+  let request = new XMLHttpRequest();
+  request.onreadystatechange = function () {
+    if (this.readyState == 4) {
+      if (this.status == 200) {
+        objekat = JSON.parse(request.responseText);
+        Object.keys(objekat).map((key) => treninzi.push ({...objekat[key],id:key}));
+        console.log(objekat)
+      } else {
+        alert("Greška prilikom učitavanja treninga.");
+      }
+    }
+  };
+
+  request.open("GET", firebaseUrl + "/treninzi/${idFitnesCentra}.json");
+  request.send();
+}
+
 window.addEventListener('load', ter)
+
+window.addEventListener('load', af)
+
+
+

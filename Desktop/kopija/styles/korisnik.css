@@ -1,0 +1,109 @@
+body{
+    background-image: url("../images/backgroundimage70%opacity.png")
+}
+
+.container{
+    border: goldenrod 2px solid;
+    padding: 20px;
+    width: 700px;
+    height: 90%;
+    border-radius: 3%;
+    padding-right: 5px;
+    margin: auto;
+    top: 10px;
+    bottom: 0;
+}
+
+.slika{
+    width: 15%;
+    opacity: 0.8;
+    border-radius: 15%;
+    vertical-align:middle;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.slika:hover{
+    opacity: 1;
+}
+.naslov{
+    margin-top: 0;
+    font-size: 50px;
+    text-align: center;
+    bottom: 0;
+    margin-left: 33%;
+    display: inline;
+    font-family:serif;
+}
+.ime{
+    top: 0;
+    display: inline-block;
+    width: 50%;
+}
+.prezime{
+    display: inline-block;
+    width: 49%;
+    font-size: 20px;
+}
+.ime1{
+    padding: 10px;
+    width: 73%;
+    margin: 5px 5px 22px 0;
+    border: none;
+    background: #f1f1f1;
+    border: solid 0.5px gold;
+    border-radius: 5%;
+}
+.prezime1{
+    padding: 10px;
+    width: 80%;
+    margin: 5px 15px 22px 0;
+    border: none;
+    background: #f1f1f1;
+    border: solid 0.5px gold;
+    border-radius: 5%;
+}
+.polja{
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: solid 0.5px gold;
+    border-radius: 5%;
+    background: #f1f1f1;
+  }
+label{
+    font-size: 20px;
+}
+.btn{
+    padding: 15px;
+    margin-left: 43%;
+    border:2px solid goldenrod;
+    color:black;
+    border-radius: 10%;
+  }
+.btn2{
+    padding: 15px;
+    margin-left: 1%;
+    border:2px solid goldenrod;
+    color:black;
+    border-radius: 10%;
+}
+.btn:hover{
+    color: rgba(0, 0, 0, 0.93);
+    background-color: gold;
+    cursor: pointer;
+}
+.btn2:hover{
+    color: rgba(0, 0, 0, 0.93);
+    background-color: gold;
+    cursor: pointer;
+}
+.container1{
+    border: goldenrod 2px solid;
+    margin-bottom: 0;
+    align-items: center;
+    padding: 50px;
+    padding-right: 15px;
+    width: 700px;
+    border-radius: 3%;
+    padding-bottom: 25px;
+}

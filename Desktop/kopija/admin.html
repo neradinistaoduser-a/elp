@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
-    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="styles/admin.css">
 </head>
 <body>
     <header>
@@ -24,7 +24,7 @@
         <br>
     </header>
     <div class="table">
-    <table>
+    <table class="table1">
         <thead>
             <tr>
                 <th>Username</th>
@@ -35,9 +35,10 @@
                 <th>Date</th>
                 <th>Address</th>
                 <th>Phone Number</th>
-                <th></th>
-                <th></th>
-                <th></th>
+                <th>Delete</th>
+                <th>Edit</th>
+                <th>Profile</th>
+                <th>Deactivate</th>
             </tr>
         </thead>
         <tbody id="tabela">
@@ -45,6 +46,26 @@
         </tbody>
     </table>
     </div>
+
+    <div class="table">
+        <table class="table2">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Opening year</th>
+                    <th>Avaivable trainings number</th>
+                    <th>Membership fee</th>
+                    <th>Adress</th>
+                    <th>Average rating</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tabelacentar">
+                
+            </tbody>
+        </table>
+        </div>
     <footer>
         <p class="footermain">Ⓒ Luka Design 2022</p>
     </footer>
@@ -120,8 +141,8 @@
             </div>
         </form>
     </div>
-    <script src="korisnici.js"></script>
-    <script src="popup.js"></script>
+    <script src="javascript/adminpanel.js"></script>
+    <script src="javascript/popup.js"></script>
 </body>
 
 </html>
