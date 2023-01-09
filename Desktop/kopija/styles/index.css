@@ -301,108 +301,86 @@ label{
     justify-content: space-between;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1025px){
+    .slika1{
+        width: 90%;
+        margin-left: 10%;
+    }
+    .podnaslov{
+        width: 90%;
+        margin-left: 10%;
+    }
+    #teretane{
+        margin-left: 10%;
+        width: 100%;
+    }
+    .gymlogo{
+        width: 90%;
+    }
+    .footermain{
+        margin-left: 50%;
+    }
+    .logo{
+        width: 10%;
+    }
+}
 
-@media screen and (max-width: 800px){
+@media screen and (min-width: 319px) and (max-width: 767px){
     button{
         width: 50%;
     }
     nav{
-        width: 15%;
+        width: 20%;
     }
     nav ul li button{
-        margin-left: -50%;
+        margin-left: -100%;
     }
     .slika1{
-        width: 100%;
+        width: 80%;
+        margin-left: 15%;
     }
     .logo{
-        width: 10%;
-        margin-left: 12%;
+        width: 0%;
+        
     }
     .podnaslov{
-        width: 100%;
+        width: 80%;
+        margin-left: 15%;
     }
     .teretane{
         width: 100%;
     }
     .gymlogo{
-        width: 130%;
+        width: 50%;
+        height: 50%;
+        margin-left: 10%;
+    }
+    .saznajvise{
+        margin-left: 10%;
     }
     .footermain{
         width: 100%;
         text-align: center;
     }
-}
-
-@media screen and (max-width: 430px){
-    nav{
-        width: 20%;
+    .pter{
+        margin-left: 10%;
     }
-    nav ul li button{
-        margin-left: -80%;
-        left: 0;
-    }
-    .logo{
-        width: 0;
-    }
-    .slika1{
-        width: 100%;
-        margin: 5%;
-    }
-    .gymlogo{
-        width: 80%;
-        height: 80%;
-    }
-    .footermain{
-        width: 100%;
-        text-align: center;
+    h3{
         margin-left: 10%;
     }
     .prvihr{
-        margin-left: 33%;
         width: 80%;
-        border-bottom: 0.5px solid yellow;
     }
+    
 }
 
-@media screen and (max-width: 430px){
-    nav{
-        width: 20%;
-    }
-    nav ul li button{
-        margin-left: -80%;
-        left: 0;
-    }
-    .logo{
-        width: 0;
-    }
+@media screen and (min-width: 1026px) and (max-width: 1441px){
     .slika1{
-        width: 100%;
-        margin: 5%;
-    }
-    .gymlogo{
-        width: 80%;
-        height: 80%;
-    }
-    .footermain{
-        width: 100%;
-        text-align: center;
-        margin-left: 10%;
-    }
-    .prvihr{
-        margin-left: 33%;
-        width: 80%;
-        border-bottom: 0.5px solid yellow;
-    }
-}
-
-@media screen and (max-width: 1670px){
-    .slika1{
-        width: 90%;
+        width: 70%;
         margin-left: 10%;
     }
     .podnaslov{
-        width: 90%;
+        width: 70%;
         margin-left: 10%;
     }
     #teretane{
@@ -412,24 +390,28 @@ label{
         height: 95%;
     }
     .footermain{
-        width: 100%;
+        margin-left: 50%;
+    }
+    .logo{
+        width: 10%;
+    }
+}
+@media screen and (min-width: 426px) and (max-width:768px){
+    .slika1{
+        width: 80%;
+        margin-left: 5%;
+    }
+    .podnaslov{
+        width: 80%;
+        margin-left: 5%;
+    }
+    #teretane{
+        margin-left: 5%;
+    }
+    .logo{
+        width: 10%;
+    }
+    .footermain{
         margin-left: 50%;
     }
 }
-@media screen and (max-width: 1441px){
-    .slika1{
-        width: 70%;
-        margin-left: 10%;
-    }
-    .podnaslov{
-        width: 70%;
-        margin-left: 10%;
-    }
-    #teretane{
-        margin-left: 10%;
-    }
-    .container{
-        height: 95%;
-    }
-}
-

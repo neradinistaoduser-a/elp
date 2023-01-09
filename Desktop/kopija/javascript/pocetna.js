@@ -10,7 +10,6 @@ function funkcija() {
             podaci = JSON.parse(request.responseText);
             for (let i in podaci) {
               let podatak = podaci[i];
-              console.log(podatak)
               appendPodatak(podatak, brojac);
               brojac+= 1
             }
@@ -27,7 +26,6 @@ function funkcija() {
     }
 
 function appendPodatak(podatak, brojac){
-  console.log(podatak)
     var idTreninga = podatak.idTreninga
     var divGlavni = document.getElementById('columns');
     var prviDiv = document.createElement('div');

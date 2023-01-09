@@ -56,9 +56,7 @@ function af() {
     }
   };
 
-  request.open(
-    "GET",
-    firebaseUrl + `/treninzi/${teretane[id]?.idTreninga}.json`
+  request.open("GET",firebaseUrl + `/treninzi/${teretane[id]?.idTreninga}.json`
   );
   request.send();
 }
@@ -87,11 +85,13 @@ function appendTrening(treninzi){
     button.appendChild(text)
     prviDiv.appendChild(a)
     divGlavni.appendChild(prviDiv);
-  //   a.addEventListener('click', ()=> {
-  //       let url = "TERETANE.html"
-  //       window.document.location = url + "?=" + brojac
-  //     })
+      a.addEventListener('click', ()=> {
+        let url = "treninzi.html"
+        window.document.location = url + "?=" 
+      })
   })
   
 }
 window.addEventListener("load", ter);
+
+

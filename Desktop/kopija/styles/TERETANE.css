@@ -231,6 +231,7 @@ label{
     width: 100%;
     height: 100%;
     position: fixed;
+    margin-left: -25%;
     top: 0;
     bottom: 0;
     display: none;
@@ -242,6 +243,7 @@ label{
     width: 100%;
     height: 105%;
     position: fixed;
+    margin-left: -25%;
     top: 0;
     bottom: 0;
     display: none;
@@ -272,6 +274,7 @@ table{
         width: 64%;
         margin-left: 22%;
     }
+
 }
 @media screen and (max-width: 1025px){
     .slika1{
@@ -286,7 +289,28 @@ table{
         margin-left: 50%;
     }
     .prvihr{
-        width: 80%;
+        width: 60%;
+        margin-left: 25%;
+    }
+}
+@media screen and (max-width: 426px){
+    .slika1{
+        width: 100%;
+    }
+    nav{
+        width: 20%;
+    }
+    nav ul li button{
+        margin-left: -100%;
+    }
+    button{
+        width: 50%;
+    }
+    .logo{
+        width: 0%;
+    }
+    h1{
+        margin-left: 20%;
     }
 }
 
