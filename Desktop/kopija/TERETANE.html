@@ -58,60 +58,56 @@
             <p class="footermain">Ⓒ Luka Design 2022</p>
         </footer>
     </div>
-    <div class="popup-signup">
-        <form action="action_page.php">
+    <div class="popup-signup" id="popup-signup">
+        <form id="registration-form">
             <div class="container">
                 <h1 class="naslov">Sign Up</h1>
                 <a href="index.html"><img class="slika" src="images/homelogo.png" alt="logo za back to home"></a>
                 <div class="ime">
                     <label for="name"><b>Name</b></label>
                     <br>
-                    <input type="text" placeholder="Enter your Name" name="name" required class="ime1">
+                    <input type="text" id="name" placeholder="Enter your Name" name="name" required class="ime1">
                 </div>
                 <div class="prezime">
                     <label for="surname" class="surname"><b>Surname</b></label>
                     <br>
-                    <input type="text" placeholder="Enter your Surname" name="surname" required class="prezime1">
+                    <input type="text" placeholder="Enter your Surname" name="surname" id="surname" required class="prezime1">
                 </div>
                 <br>
                 <div>
                     <label for="Username"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" name="username" required class="polja">
+                    <input type="text" placeholder="Enter Username" name="username" id="username" required class="polja">
                 </div>
                 <div>
                     <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required class="polja">
+                    <input type="text" placeholder="Enter Email" name="email" id="email" required class="polja">
                 </div>
                 <div>
                     <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required class="polja">
+                    <input type="password" placeholder="Enter Password" name="psw"  id="password" required class="polja">
                 </div>
                 <label for="date"><b>Date</b></label>
                 <br>
-                <input type="date" name="date" required class="polja">
+                <input type="date" name="date" required class="polja" id="date">
                 <div>
                     <label for="adresa"><b>Address</b></label>
-                    <input type="text" placeholder="Enter your Address" name="adresa" required class="polja">
+                    <input type="text" placeholder="Enter your Address" name="adresa" id="adress" required class="polja">
                 </div>
                 <label for="number"><b>Phone Number</b></label>
-                <input type="tel" placeholder="Enter your Phone Number" name="number" required class="polja">
+                <input type="tel" placeholder="Enter your Phone Number" name="number" id="number" required class="polja">
                 <div>
-                    <label for="rememberme">Remember me</label>
-                    <input type="checkbox" name="remember" required>
-                    <br>
-                    <br>
                     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
                     <br>
                 </div>
                 <div>
-                    <button type="submit" class="btn"><b>Sign Up</b></button>
+                    <button type="submit" class="btn" id="batn"><b>Sign Up</b></button>
                     <button class="btn2" type="button" id="closeS"><b>Close</b></button>
                 </div>
             </div>
         </form>
     </div>
     <div class="popup-login">
-        <form action="action_page.php">
+        <form>
             <div class="container1">
                 <h1 class="naslov">Log In</h1>
                 <a href="index.html"><img class="slika" src="images/homelogo.png" alt="logo za back to home"></a>
@@ -130,7 +126,10 @@
             </div>
         </form>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-database.js"></script>
     <script src="javascript/teretane.js"></script>
     <script src="javascript/popup.js"></script>
+    <script src="javascript/signup.js"></script>
 </body>
 </html>

@@ -1,6 +1,5 @@
 var firebaseUrl = 'https://projekat-b55d8-default-rtdb.firebaseio.com';
 var korisnici = []
-console.log(korisnici)
 function atributiKor() {
 
     let id = window.document.location.href.slice(-1)
@@ -44,7 +43,6 @@ function kor() {
           for (let i in objekat) {
             let korisnicko = objekat[i]
             korisnici.push(korisnicko)
-            console.log(korisnicko)
           }
           atributiKor()
           
@@ -59,10 +57,5 @@ function kor() {
     request.open("GET", firebaseUrl + "/korisnici.json");
     request.send();
 }
-
-let dugme = document.getElementById('dugme')
-dugme.addEventListener('click',function(){
-  confirm("Are you sure you want to edit this user?")
-})
 
 window.addEventListener('load', kor)

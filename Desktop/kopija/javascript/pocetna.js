@@ -1,6 +1,5 @@
 var firebaseUrl = 'https://projekat-b55d8-default-rtdb.firebaseio.com';
 var brojac = 0
-
 function funkcija() {
     function sviPodaci() {
       let request = new XMLHttpRequest();

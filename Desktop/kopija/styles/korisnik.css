@@ -80,6 +80,22 @@ label{
     color:black;
     border-radius: 10%;
   }
+  .btn1{
+    padding: 15px;
+    margin-left: 33%;
+    border:2px solid goldenrod;
+    color:black;
+    border-radius: 10%;
+  }
+  .btn1:hover{
+    color: rgba(0, 0, 0, 0.93);
+    background-color: gold;
+    cursor: pointer;
+}
+  .a1{
+    text-decoration: none;
+    color:black;
+  }
 .btn2{
     padding: 15px;
     margin-left: 1%;

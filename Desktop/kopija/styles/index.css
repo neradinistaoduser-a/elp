@@ -300,6 +300,19 @@ label{
     display: flex; 
     justify-content: space-between;
 }
+#error{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: black;
+    margin-left: 5%;
+}
+.error{
+    margin-top: 10%;
+}
 
 @media screen and (min-width: 769px) and (max-width: 1025px){
     .slika1{
@@ -322,6 +335,14 @@ label{
     }
     .logo{
         width: 10%;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    .container1{
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -371,7 +392,19 @@ label{
     .prvihr{
         width: 80%;
     }
-    
+    #error{
+        width: 80%;
+        margin-left: 25%;
+        margin-right: 5%;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    .container1{
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media screen and (min-width: 1026px) and (max-width: 1441px){
@@ -395,6 +428,14 @@ label{
     .logo{
         width: 10%;
     }
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    .container1{
+        width: 100%;
+        height: 100%;
+    }
 }
 @media screen and (min-width: 426px) and (max-width:768px){
     .slika1{
@@ -413,5 +454,13 @@ label{
     }
     .footermain{
         margin-left: 50%;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    .container1{
+        width: 100%;
+        height: 100%;
     }
 }

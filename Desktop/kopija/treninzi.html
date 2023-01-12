@@ -5,9 +5,125 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treninzi</title>
+    <link rel="stylesheet" href="styles/TERETANE.css">
 </head>
 <body>
-    <h1 id="naslov"></h1>
+    <header>
+        <nav>
+            <ul>
+                <li><button type="button" id="signup">Sign Up</button></li>
+                <li><button type="button" id="login">Log In</button></li>
+                <li><a href="admin.html"><button type="button">Admin Page</a></li>
+            </ul>
+        </nav>
+        <div class="divlogo">
+            <a href="index.html"><img class="logo" src="images/homelogo.png" alt="logo za back to home"></a>
+            <h1 id = "naslov"></h1>
+            <hr class="prvihr">
+        </div>
+        <br>
+    </header>
+    <div class="glavni">
+        <div>
+            <h2>About</h2>
+            <br>
+            <div class="divklasa"><p>Opis: </p>
+            <p id="opis"></p></div>
+            <br>
+            <div class="divklasa"><p>Zanr: </p>
+            <p id="zanr"></p></div>
+            <hr>
+            <div class="divklasa"><p>Trajanje: 
+            </p><p id="trajanje"></p></div>
+            <hr>
+            <div class="divklasa"><p>Max osobe: </p>
+            <p id="maxosobe"></p></div>
+            <hr>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <footer>
+                <p class="footermain">Ⓒ Luka Design 2022</p>
+            </footer>
+        </div>
+        <div class="popup-signup" id="popup-signup">
+            <form id="registration-form">
+                <div class="container">
+                    <h1 class="naslov">Sign Up</h1>
+                    <a href="index.html"><img class="slika" src="images/homelogo.png" alt="logo za back to home"></a>
+                    <div class="ime">
+                        <label for="name"><b>Name</b></label>
+                        <br>
+                        <input type="text" id="name" placeholder="Enter your Name" name="name" required class="ime1">
+                    </div>
+                    <div class="prezime">
+                        <label for="surname" class="surname"><b>Surname</b></label>
+                        <br>
+                        <input type="text" placeholder="Enter your Surname" name="surname" id="surname" required class="prezime1">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="Username"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="username" id="username" required class="polja">
+                    </div>
+                    <div>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" id="email" required class="polja">
+                    </div>
+                    <div>
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw"  id="password" required class="polja">
+                    </div>
+                    <label for="date"><b>Date</b></label>
+                    <br>
+                    <input type="date" name="date" required class="polja" id="date">
+                    <div>
+                        <label for="adresa"><b>Address</b></label>
+                        <input type="text" placeholder="Enter your Address" name="adresa" id="adress" required class="polja">
+                    </div>
+                    <label for="number"><b>Phone Number</b></label>
+                    <input type="tel" placeholder="Enter your Phone Number" name="number" id="number" required class="polja">
+                    <div>
+                        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                        <br>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn" id="batn"><b>Sign Up</b></button>
+                        <button class="btn2" type="button" id="closeS"><b>Close</b></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="popup-login">
+            <form>
+                <div class="container1">
+                    <h1 class="naslov">Log In</h1>
+                    <a href="index.html"><img class="slika" src="images/homelogo.png" alt="logo za back to home"></a>
+                    <div>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required class="polja">
+                    </div>
+                    <div>
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required class="polja">
+                        <div>
+                            <button class="btn" type="submit"><b>Log In</b></button>
+                            <button class="btn2" type="button" id="closeL"><b>Close</b></button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-database.js"></script>
+    <script src="javascript/popup.js"></script>
     <script src="javascript/podacitreninga.js"></script>
+    <script src="javascript/signup.js"></script>
 </body>
 </html>

@@ -1,16 +1,19 @@
 var firebaseUrl = 'https://projekat-b55d8-default-rtdb.firebaseio.com';
 var brojac = 0
 var brojac2 = 0
-function funkcija() {
+
+
 function sviKorisnici() {
   let request = new XMLHttpRequest();
   request.onreadystatechange = function () {
     if (this.readyState == 4) {
       if (this.status == 200) {
-        korisnici = JSON.parse(request.responseText);
+        korisnici = []
+        console.log(korisnici)
+        korisnici = JSON.parse(request.responseText)
         for (let i in korisnici) {
           let korisnik = korisnici[i];
-          appendKorisnika("tabela",korisnik,brojac);
+          appendKorisnika("tabela",korisnik,brojac,i);
           brojac +=1;
         }
       } else {
@@ -22,10 +25,7 @@ function sviKorisnici() {
   request.open("GET", firebaseUrl + "/korisnici.json");
   request.send();
 }
-sviKorisnici();
-}
 
-function funkcijagym() {
   function sviCentri() {
     let request = new XMLHttpRequest();
     request.onreadystatechange = function () {
@@ -34,9 +34,8 @@ function funkcijagym() {
           centri = JSON.parse(request.responseText);
           for (let i in centri) {
             let centar = centri[i];
-            appendCentar("tabelacentar",centar,brojac2);
+            appendCentar("tabelacentar",centar,brojac2,i);
             brojac2 +=1;
-            console.log(brojac2)
           }
         } else {
           alert("Greška prilikom učitavanja centara.");
@@ -48,8 +47,42 @@ function funkcijagym() {
     request.send();
   }
   sviCentri();
+
+
+  function deleteKor(deleteButton) {
+    let korId = deleteButton.getAttribute("data-id");
+    let request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+      if (this.readyState == 4) {
+        if (this.status == 200) {
+        } else {
+          alert("Greška prilikom brisanja korisnika.");
+        }
+      }
+    };
+  
+    request.open("DELETE", firebaseUrl + "/korisnici/" + korId + ".json");
+    request.send();
   }
-  function appendCentar(tBody,centar,brojac2) {
+  function deleteTer(deleteButton) {
+    let terId = deleteButton.getAttribute("data-id");
+    let request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+      if (this.readyState == 4) {
+        if (this.status == 200) {
+        } else {
+          alert("Greška prilikom brisanja korisnika.");
+        }
+      }
+    };
+  
+    request.open("DELETE", firebaseUrl + "/fitnesCentri/" + terId + ".json");
+    request.send();
+  }
+
+
+
+  function appendCentar(tBody,centar,brojac2,i) {
     let Row = document.createElement("tr");
     let naziv = document.createElement("td");
     naziv.innerText = centar.naziv;
@@ -74,6 +107,7 @@ function funkcijagym() {
     let text = document.createTextNode('Delete Center')
     deleteButton.appendChild(text)
     deleteButton.classList.add('pointer')
+    deleteButton.setAttribute('data-id',i)
     DeleteUserTd.appendChild(deleteButton)
     Row.appendChild(DeleteUserTd)
     let editButton = document.createElement('button')
@@ -85,7 +119,10 @@ function funkcijagym() {
     Row.appendChild(EditUserTd)
     document.getElementById(tBody).appendChild(Row);
     deleteButton.addEventListener('click',function(){
-      confirm("Are you sure you want to delete this fitness center?")
+      if(confirm("Are you sure you want to delete this row?")){
+        deleteTer(deleteButton);
+        alert("Teretana uspesno obrisana!")
+      }
     })
     editButton.addEventListener('click',function(){
       let url = "fitnessCentar.html"
@@ -93,7 +130,7 @@ function funkcijagym() {
     })
   }
 
-function appendKorisnika(tBody,korisnik,brojac) {
+function appendKorisnika(tBody,korisnik,brojac,i) {
     let Row = document.createElement("tr");
     let korImeTd = document.createElement("td");
     korImeTd.innerText = korisnik.korisnickoIme;
@@ -123,6 +160,8 @@ function appendKorisnika(tBody,korisnik,brojac) {
     let deleteButton = document.createElement('button')
     let text = document.createTextNode('Delete User')
     deleteButton.appendChild(text)
+    deleteButton.type = "button"
+    deleteButton.setAttribute("data-id",i)
     deleteButton.classList.add('pointer')
     DeleteUserTd.appendChild(deleteButton)
     Row.appendChild(DeleteUserTd)
@@ -149,7 +188,10 @@ function appendKorisnika(tBody,korisnik,brojac) {
     Row.appendChild(deactivateUser)
     document.getElementById(tBody).appendChild(Row);
     deleteButton.addEventListener('click',function(){
-      confirm("Are you sure you want to delete the user?")
+      if(confirm("Are you sure you want to delete this row?")){
+        deleteKor(deleteButton);
+        alert("Korisnik uspesno obrisan!")
+      }
     })
     editButton.addEventListener('click',function(){
       let url = "korisnici.html"
@@ -164,7 +206,6 @@ function appendKorisnika(tBody,korisnik,brojac) {
     })
   }
 
- 
 
-window.addEventListener('load', funkcija)
-window.addEventListener('load', funkcijagym)
+
+window.addEventListener('load', sviKorisnici);

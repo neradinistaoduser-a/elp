@@ -60,7 +60,7 @@ function kor() {
 
 let dugme = document.getElementById('dugme')
 dugme.addEventListener('click',function(){
-  confirm("Nothing happens :)")
+  
 })
 
 window.addEventListener('load', kor)

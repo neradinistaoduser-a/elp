@@ -86,7 +86,7 @@ function appendTrening(treninzi){
     divGlavni.appendChild(prviDiv);
       a.addEventListener('click', ()=> {
         let url = "treninzi.html"
-        window.document.location = url + "?=" + index
+        window.document.location = url + "?=" + id + "?=" + index;
       })
   })
   
